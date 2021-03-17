@@ -18,15 +18,15 @@ public class UserService {
         return userRepository.findAll();
     }
 
-    public User findOne(int id) {
-        return userRepository.findOne(id);
+    public User findOne(Integer id) {
+        return userRepository.findById(id).orElse(null);
     }
 
     public User save(User user) {
         return userRepository.save(user);
     }
 
-    public void delete(int id) {
-        UserRepository.delete(id);
+    public void delete(Integer id) {
+        userRepository.deleteById(id);
     }
 }
