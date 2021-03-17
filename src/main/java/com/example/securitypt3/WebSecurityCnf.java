@@ -1,4 +1,4 @@
-package com.example.securitypt3;
+/*package com.example.securitypt3;
 
 import java.io.Console;
 import java.util.Scanner;
@@ -42,7 +42,7 @@ public class WebSecurityCnf extends WebSecurityConfigurerAdapter { //2
         }
 }*/
 
-@Configuration
+/*@Configuration
 public class WebSecurityCnf extends WebSecurityConfigurerAdapter {
 
     //private static final Logger log = LogManager.getLogger();
@@ -125,7 +125,7 @@ public class WebSecurityCnf extends WebSecurityConfigurerAdapter {
         InMemoryUserDetailsManager manager = new InMemoryUserDetailsManager();
         if (id != null && password != null) {
             String encodedPassword = passwordEncoder().encode(password);
-            manager.createUser(User.withId(id).password(encodedPassword).build());
+            manager.createUser(User.getId(id).getPassword(encodedPassword).build());
         }
         return manager;
     }
@@ -134,4 +134,4 @@ public class WebSecurityCnf extends WebSecurityConfigurerAdapter {
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
-}
+}*/
