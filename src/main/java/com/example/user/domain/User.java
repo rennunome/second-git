@@ -78,5 +78,5 @@ public class User{
 
 	public void setDeletedAt(Timestamp deleted_at) {
 		this.deleted_at = deleted_at;
-	}
+		}
 }
